@@ -1,3 +1,93 @@
+## Sobre
+
+- Dashboard para gerenciamento de pedidos, lojas, produtos e categorias
+- Carrinho de compras
+- Pagamento
+- Autenticação
+- Validação
+- Notificações via e-mail e SMS
+
+
+## .env
+
+- Adicionar o domínio
+
+    ```
+    APP_URL=http://localhost
+    ```
+
+- Adicionar os detalhes do banco de dados
+
+    ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=marketplace
+    DB_USERNAME=root
+    DB_PASSWORD=root
+    ```
+
+- Adicionar configurações de email e remetente
+
+    ```
+    MAIL_MAILER=smtp
+    MAIL_HOST=mailpit
+    MAIL_PORT=1025
+    MAIL_USERNAME=null
+    MAIL_PASSWORD=null
+    MAIL_ENCRYPTION=null
+    MAIL_FROM_ADDRESS="hello@example.com"
+    MAIL_FROM_NAME="${APP_NAME}"
+    ```
+  
+- Adicionar suas credenciais de email e token do pagseguro
+
+    ```
+    PAGSEGURO_ENV=sandbox
+    PAGSEGURO_EMAIL=
+    PAGSEGURO_TOKEN_SANDBOX=
+    ```
+
+
+## Comandos
+
+- Clonar repositório
+
+    ```
+    git clone https://github.com/GeoSGon/marketplace-laravel-10.git
+    ```
+
+- Criar o banco de dados
+
+    ```
+    php artisan migrate
+    ```
+
+- popular o banco de dados com dados falsos
+
+    ```
+    php artisan db:seed
+    ```
+
+- Iniciar o servidor local do laravel
+
+    ```
+    php artisan serve
+    ```
+
+- Instalar as dependências do package.json
+
+    ```
+    npm install
+    ```
+
+- Iniciar o servidor de desenvolvimento com o Vite
+
+    ```
+    npm run dev
+    ```
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
